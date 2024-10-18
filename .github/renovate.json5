@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "docker:enableMajor",
+    ":automergeBranch",
+    ":disableRateLimiting"
+  ],
+  "assigneesFromCodeOwners": true,
+  "dependencyDashboard": false,
+  // Since we don't have tests, and we want automerge enabled
+  "ignoreTests": true,
+}
